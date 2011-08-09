@@ -1,0 +1,104 @@
+/* 
+    Document   : main
+    Created on : 10-Jul-2011, 11:10:58
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+*, html, body {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	background: #000000;
+	color: #ffffff;
+	font: 12px arial, sans-serif;
+}
+
+#canvas {
+	position: relative;
+	margin: 50px auto 0;
+	
+	width: 960px;
+}
+
+#canvas #map {
+	position: relative;
+	background: url('/assets/img/map.jpg') no-repeat top center;
+	
+	width: 960px;
+	height: 447px;
+}
+
+#canvas #toolbox {
+	position: relative;
+	height: 20px;
+}
+
+#canvas .piece {
+	display: inline-block;
+	cursor: pointer;
+}
+
+#canvas .pin{
+	width: 20px;
+	height: 20px;
+}
+
+#canvas .pin.red{
+	background: url('/assets/img/pin-red.png') no-repeat center;
+}
+
+#canvas .pin.blue {
+	background: url('/assets/img/pin-blue.png') no-repeat center;
+}
+
+#chat #chat-log {
+	border: 1px solid #222;
+	margin: 2px 0;
+	padding: 5px;
+	
+	width: 950px;
+	height: 60px;
+	
+	overflow: auto;
+}
+
+#chat #message-box {
+	color: #ffffff;
+	background: url(/assets/img/chat-bubble.png) black 4px 7px no-repeat;
+	
+	border: 1px solid #222;
+	margin: 2px 0;
+	padding: 5px 5px 5px 27px;
+	width: 928px;
+}
+
+#chat #stats {
+	color: #0E5A6A;
+	font-size: 11px;
+}
+
+#chat #stats .count {
+	color: #62BECB;
+}
+
+#chat-log .announce {
+	color: #0E5A6A;
+}
+
+#chat-log .entry .user {
+	color: #62BECB;
+}
+
+.ui-widget { font-size: 12px; }
